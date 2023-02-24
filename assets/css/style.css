@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(../img/dark-mode.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.main{
+    width: 360px;
+    height: 710px;
+
+    margin: 56px auto 0;
+}
+
+.profile{
+    text-align: center;
+    margin-top: 10px;
+    padding: 1.7rem;
+}
+
+.profile .photo{
+    width: 115px;
+    border: 2px solid #ffaaffaa;
+    border-radius: 50%;
+    
+}
+
+.profile p{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #fafafa;
+    line-height: 24px;
+}
