@@ -22,6 +22,7 @@ a{
     --bg-button-color: rgba(255, 255, 255, 0.15);
 
     --bg-mode: url(../img/moon.svg);
+    --bg-icon-color: #232424;
 }
 
 .light-mode{
@@ -31,6 +32,7 @@ a{
     --bg-button-color: rgba(212, 201, 201, 0.15);
 
     --bg-mode: url(../img/sun.svg);
+    --bg-icon-color: #fafafa;
 }
 
 body {
@@ -85,11 +87,11 @@ body {
     height: 32px;
     position: absolute;
     top: 50%;
-    right: 0;
+    left: 0;
     transform: translateY(-50%);
 
     background: white var(--bg-mode) no-repeat center;
-    color: #232424;
+    color: var(--bg-icon-color);
     border: 0;
     border-radius: 50%;
     cursor: pointer;
@@ -100,12 +102,17 @@ body {
     width: 64px;
     height: 24px;
     display: block;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--bg-button-color);
+    border: 1px solid var(--border-color);
     border-radius: 9999px;
 
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+}
+
+.light-mode .change-mode button{
+    right: 0;
+    left: initial;
 }
 
 .links ul{
