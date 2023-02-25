@@ -15,8 +15,20 @@ a{
     text-decoration: none;
 }
 
+:root{
+    --text-color: #fafafa;
+    --bg-url: url(../img/dark-mode.jpg);
+    --border-color: rgba(255, 170, 255, 0.5);
+}
+
+.light-mode{
+    --text-color: #232424;
+    --bg-url: url(../img/light-mode.jpg);
+    --border-color: rgba(35, 36, 36, 0.502);
+}
+
 body {
-    background: url(../img/dark-mode.jpg);
+    background: var(--bg-url);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -26,7 +38,7 @@ body {
     width: 360px;
     height: 710px;
 
-    margin: 56px auto 0;
+    margin: 100px auto 0;
 }
 
 .profile{
@@ -37,15 +49,19 @@ body {
 
 .profile .photo{
     width: 115px;
-    border: 2px solid #ffaaffaa;
+    border: 2px solid var(--border-color);
     border-radius: 50%;
-    
+    transition: transform .2s ease-in-out;
+}
+
+.profile .photo:hover{
+    transform: scale(1.1);
 }
 
 .profile p{
     font-weight: 500;
     font-size: 1.25rem;
-    color: #fafafa;
+    color: var(--text-color);
     line-height: 24px;
 }
 
@@ -61,7 +77,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 170, 255, 0.5);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     font-weight: 500;
     letter-spacing: .5px;
@@ -69,7 +85,7 @@ body {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     
-    color: #fafafa;
+    color: var(--text-color);
     background: rgba(255, 255, 255, 0.15);
     padding: 16px 24px;
 
@@ -79,7 +95,7 @@ body {
 .links li a:hover{
     transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.25);
-    border: 2px solid rgba(255, 170, 255, 0.5);
+    border: 2px solid var(--border-color);
 }
 
 .socials{
@@ -91,9 +107,22 @@ body {
     gap: 1rem;
 }
 
+.socials a{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    transition: all .2s;
+    border-radius: 50%;
+}
+
+.socials a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .socials i{
-    color: #fff;
-    font-size: 2.1rem;
+    color: var(--text-color);
+    font-size: 1.7rem;
     
     display: flex;
     padding: 5px;
