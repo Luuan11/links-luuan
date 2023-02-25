@@ -19,12 +19,18 @@ a{
     --text-color: #fafafa;
     --bg-url: url(../img/dark-mode.jpg);
     --border-color: rgba(255, 170, 255, 0.5);
+    --bg-button-color: rgba(255, 255, 255, 0.15);
+
+    --bg-mode: url(../img/moon.svg);
 }
 
 .light-mode{
     --text-color: #232424;
     --bg-url: url(../img/light-mode.jpg);
-    --border-color: rgba(35, 36, 36, 0.502);
+    --border-color: rgba(35, 36, 36, 0.5);
+    --bg-button-color: rgba(212, 201, 201, 0.15);
+
+    --bg-mode: url(../img/sun.svg);
 }
 
 body {
@@ -32,6 +38,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    
 }
 
 .main{
@@ -44,7 +51,7 @@ body {
 .profile{
     text-align: center;
     margin-top: 10px;
-    padding: 1.7rem;
+    padding: 1.25rem;
 }
 
 .profile .photo{
@@ -63,6 +70,42 @@ body {
     font-size: 1.25rem;
     color: var(--text-color);
     line-height: 24px;
+}
+
+.change-mode{
+    width: 64px;
+    height: 24px;
+    position: relative;
+
+    margin: 5px auto;
+}
+
+.change-mode button{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    background: white var(--bg-mode) no-repeat center;
+    color: #232424;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.change-mode span{
+    width: 64px;
+    height: 24px;
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 9999px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .links ul{
@@ -86,7 +129,7 @@ body {
     -webkit-backdrop-filter: blur(4px);
     
     color: var(--text-color);
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--bg-button-color);
     padding: 16px 24px;
 
     transition: all .3s ease-in-out;
@@ -117,7 +160,7 @@ body {
 }
 
 .socials a:hover{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .socials i{
