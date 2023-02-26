@@ -38,9 +38,8 @@ a{
 body {
     background: var(--bg-url);
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    
+    background-position: center;
+    background-size: cover bottom;
 }
 
 .main{
@@ -146,6 +145,11 @@ body {
     transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.25);
     border: 2px solid var(--border-color);
+}
+
+.links li a i{
+    margin-right: 10px;
+    font-size: 1.25rem;
 }
 
 .socials{
