@@ -94,6 +94,7 @@ body {
     border: 0;
     border-radius: 50%;
     cursor: pointer;
+    animation: Darkmode .4s;
     z-index: 1;
 }
 
@@ -112,6 +113,7 @@ body {
 .light-mode .change-mode button{
     right: 0;
     left: initial;
+    animation: Lightmode .4s;
 }
 
 .links ul{
@@ -180,4 +182,14 @@ body {
     
     display: flex;
     padding: 5px;
+}
+
+@keyframes Lightmode{
+    from{left:0}
+    to{left:50%}
+}
+
+@keyframes Darkmode{
+    from{left:50%}
+    to{left:0}
 }
