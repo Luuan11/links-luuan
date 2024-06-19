@@ -1,10 +1,11 @@
 # Links-luuan
 
 ### Light-mode
-![preview](https://user-images.githubusercontent.com/79935555/221421218-9bfb7bc9-4617-4766-9587-6c435fda9932.png)
+![preview](https://github.com/Luuan11/links-luuan/assets/79935555/da917696-6a79-493d-a8f5-c66f2e39a092)
 
 ### Dark-mode
-![preview](https://user-images.githubusercontent.com/79935555/221421290-d64851a1-f4f2-447b-949e-d5568441bbab.png)
+![preview](https://github.com/Luuan11/links-luuan/assets/79935555/17981fc2-8573-4827-8bb0-3dab616baf43)
+
 
 ### <p align="center"> <a href="https://links-luuan.vercel.app/">Clique aqui para ver meu projeto!</a> </p>
 
